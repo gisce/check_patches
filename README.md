@@ -3,5 +3,5 @@
 use in the directory of exported patches (`git format-patch`)
 
 ```sh
-$ check_applied_aptches.sh tag
+$ check_applied_patches.sh tag
 ```
