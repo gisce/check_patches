@@ -12,7 +12,7 @@ def status_dict(directory):
             status[label] = field
         if 'last_commit' in status:
             commit_hash = status['last_commit'][1:]
-            log = run("git log -n1 --oneline %(commit_hash)s"
+            log = run("git log -n1 --format=%%s %(commit_hash)s"
             % locals(), pty=False).strip()
             status['last_commit'] = {
                 'hash': commit_hash,
